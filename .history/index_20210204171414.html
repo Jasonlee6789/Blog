@@ -14,7 +14,7 @@
 	<link href="assets/css/bootstrap.css" rel="stylesheet">
 
 	<!-- Custom styles for this template -->
-	<link href="assets/css/elusive-webfont.css" rel="stylesheet">
+	<!-- <link href="assets/css/elusive-webfont.css" rel="stylesheet"> -->
 	<link href="assets/css/animate.css" rel="stylesheet">
 	<!-- <link href="assets/css/pe-icons.css" rel="stylesheet"> -->
 	<link href="assets/css/style.css" rel="stylesheet">
@@ -36,22 +36,7 @@
 </head>
 
 <body>
-	<div id="preloader">
-		<div>
-			<div class="preloadertext">
-			 STAY, 
-			</div>
-			<div class="preloadertext preloadertext2">
-			 PLAY
-			</div>
-			<div class="preloadertext preloadertext3">
-			 &amp; TAKE
-			</div>
-			<div class="preloadertext preloadertext4">
-			 AWAY
-			</div>
-		   </div>
-	</div>
+
 	<div id="navbar-main">
 		<div class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
@@ -70,7 +55,7 @@
 				<div class="navbar-collapse collapse" id="main-navigation">
 						<ul class="nav navbar-nav">
 							<li class="active">
-								<a href="/" class="d-flex align-items-center">HOME</a>
+								<a href="#" class="d-flex align-items-center">HOME</a>
 							  </li>	
 							  
 							  <li class="dropdown">
@@ -86,12 +71,12 @@
 							</li>	
 
 							  <li>
-								<a href="/about" class="d-flex align-items-center">ABOUT</a>
+								<a href="#" class="d-flex align-items-center">ABOUT</a>
 							  </li>	
 
-							  <li><a href="/events-catering" class="d-flex align-items-center">Event&Catering</a></li>
+							  <li><a href="#" class="d-flex align-items-center">Event&Catering</a></li>
 			
-							<li> <a href="/booking" class="search-trigger">BOOK A TABLE</a></li>
+							<li> <a href="#" class="search-trigger">BOOK A TABLE</a></li>
 						</ul>	
 				</div>
 				
@@ -425,33 +410,6 @@
 			</section>
 
 
-			<section>   
-				<div id="contact" class="container page-section">
-					<div>
-						<div>
-						 Discover
-						</div>
-						<h2 >A neighbourhood Caf¨¦</h2>
-						<div class="divider"></div>
-					   </div>
-					<div class="row row white">
-						
-						<div class="col-md-6 fade-up">
-						
-							<p>Fields is Albany¡¯s new neighbourhood cafe and eatery. An homage to Albany¡¯s roots as a fruit growing district coupled with a modern and diverse food offering to reflect where we are today. &nbsp;<br>
-							</p>
-						</div>
-						<div class="col-md-6 fade-up">
-							<p>We¡¯re inspired by all cultures and cuisines but determined by none. We use real ingredients and focus on simple, delicious flavours that cater to all tastes and ages.</p>
-						</div>
-						
-					</div>
-					<a href="/about">More About Us</a>
-				</div>
-			</section>
-
-			
-					
 		<section class="section-divider textdivider divider6">
 			<div class="container">
 				<h1 class="fade-down section-title">New Brighton Cafe | ChristChurch</h1>
@@ -465,7 +423,7 @@
 
 		<section id="contact" class="container-fluid page-section">
 			<div class="white">
-				<div class="fade-up">
+				<div class="col-md-4 fade-up">
 					<h3>Contact Information</h3>
 					<p><span class="icon icon-home"></span>Appian Way, Albany, Auckland 0632<br />
 						<br />
@@ -480,7 +438,18 @@
 						</ul>
 					</p>
 				</div>
-
+				<div class="col-md-8 fade-up">
+					<h3>Drop Us A Message</h3>
+					<br>
+					<div id="message"></div>
+					<form method="post" action="sendemail.php" id="contactform">
+						<input type="text" name="name" id="name" placeholder="Name" />
+						<input type="text" name="email" id="email" placeholder="Email" />
+						<input type="text" name="website" id="website" placeholder="Date, Time, People numbers" />
+						<textarea name="comments" id="comments" placeholder="Specific notes"></textarea>
+						<input class="btn btn-success" type="submit" name="submit" value="Send an email" />
+					</form>
+				</div>
 			</div>
 			<section>
 	</div>

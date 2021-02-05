@@ -425,8 +425,8 @@
 			</section>
 
 
-			<section>   
-				<div id="contact" class="container page-section">
+				<section>   
+					<div id="contact" class="container page-section">
 					<div>
 						<div>
 						 Discover
@@ -465,7 +465,7 @@
 
 		<section id="contact" class="container-fluid page-section">
 			<div class="white">
-				<div class="fade-up">
+				<div class="col-md-4 fade-up">
 					<h3>Contact Information</h3>
 					<p><span class="icon icon-home"></span>Appian Way, Albany, Auckland 0632<br />
 						<br />
@@ -480,7 +480,18 @@
 						</ul>
 					</p>
 				</div>
-
+				<div class="col-md-8 fade-up">
+					<h3>Drop Us A Message</h3>
+					<br>
+					<div id="message"></div>
+					<form method="post" action="sendemail.php" id="contactform">
+						<input type="text" name="name" id="name" placeholder="Name" />
+						<input type="text" name="email" id="email" placeholder="Email" />
+						<input type="text" name="website" id="website" placeholder="Date, Time, People numbers" />
+						<textarea name="comments" id="comments" placeholder="Specific notes"></textarea>
+						<input class="btn btn-success" type="submit" name="submit" value="Send an email" />
+					</form>
+				</div>
 			</div>
 			<section>
 	</div>

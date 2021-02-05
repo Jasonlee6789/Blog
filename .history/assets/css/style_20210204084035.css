@@ -275,6 +275,7 @@ body {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  float: left;
 }
 
 .navbar-nav > li > a:after {
